@@ -5,24 +5,15 @@ public class Principal {
 	public static void main(String[] args) {
 		//importações iniciais
 	    Scanner sc = new Scanner(System.in);    
-		Jogador player1 = new Jogador();
+		
 		
         
 	//configurações iniciais
      System.out.println("DIGITE SEU NOME:");
-     String nome = sc.next(); 
-     player1.setNome(nome);
-     int pontos = 0;
-     player1.setPontos(pontos);
+     String jogador = sc.next(); 
+     int pontos = 0;;
+     System.out.println("");
      
-     
-    System.out.println("Ola " + player1.getNome());
-    System.out.println("VOCE QUER JOGAR NOSSO QUIZ SIM OU NAO RESPONDA AGORA:");
-    System.out.println("1-SIM               2-SIM");
-    int resp = sc.nextInt();
-    
-    if(resp == 1 || resp==2) {
-  
 		
 		System.out.println("######################################################################################################################################################");
 		System.out.println("########################################################################----MM########################################################################");
@@ -128,10 +119,57 @@ public class Principal {
 	        System.out.println("                                             |||||          ");
 
 	        
+	        System.out.println("===============================================================================================");
+	        System.out.println("MODO DE JOGO: \r\n"
+	        				+ "1 - DIFICULDADE PROGRESSIVA \r\n"
+	        				+ "2 - ESCOLHER DIFICULDADE");
+	        System.out.println("===============================================================================================");
+	        int escolha = sc.nextInt();
+	     
 	        
+	        if(escolha==1) {
+	        System.out.println("");
+	        System.out.println("Ola " + jogador);
+	        System.out.println("Quantidade de pontos: " + pontos);
+	        System.out.println("");
 	        
+	        //CODEM A PARTIR DAQUI
+	        System.out.println("1. Qual sistema numérico é usado pelos computadores?\r\n"
+	        		+ "   1) Binario\r\n"
+	        		+ "   2) Decimal\r\n"
+	        		+ "   3) Octal\r\n"
+	        		+ "   4) Hexadecimal\r\n"
+	        		+ "   5) Ternario"); 
+	        int alternativa = sc.nextInt(); 
 	        
+	        switch(alternativa) {
+	        case 1:
+	        	pontos = pontos + 5; 
+	        	System.out.println("VOCE ACERTOU");
+	        	System.out.println("Total de pontos: " + pontos);
+	        	break; 
+	        case 2:
+	        	System.out.println("VOCE ERROU!");
+	        	break;
+	        case 3:
+	        	System.out.println("VOCE ERROU!");
+	        	break;
+	        case 4:
+	        	System.out.println("VOCE ERROU!");
+	        	break;
+	        case 5:
+	        	System.out.println("VOCE ERROU!");
+	        	break;
+	        default:
+	        	System.out.println("digite uma opcao valida");
+	        	return;
+	        }
 	        
+	        }
+	        
+	        else {
+	        	System.out.println("AINDA NÃO IMPLEMENTADO");
+	        }
 	        
     }
 	        
@@ -149,7 +187,7 @@ public class Principal {
 	        
 	}
 
-}
+
 	  
 
 
