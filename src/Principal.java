@@ -140,9 +140,9 @@ public class Principal {
 	        		+ "   3) Octal\r\n"
 	        		+ "   4) Hexadecimal\r\n"
 	        		+ "   5) Ternario"); 
-	        int alternativa = sc.nextInt(); 
+	        int alternativa1 = sc.nextInt(); 
 	        
-	        switch(alternativa) {
+	        switch(alternativa1) {
 	        case 1:
 	        	pontos = pontos + 5; 
 	        	System.out.println("VOCE ACERTOU");
@@ -164,6 +164,176 @@ public class Principal {
 	        	System.out.println("digite uma opcao valida");
 	        	return;
 	        }
+	        
+	        System.out.println("2. Quantos dígitos possui o sistema binário?\r\n"
+	        		+ "1) 2\r\n"
+	        		+ "2) 4\r\n"
+	        		+ "3) 8\r\n"
+	        		+ "4) 10\r\n"
+	        		+ "5) 16\r\n"); 
+	        int alternativa2 = sc.nextInt(); 
+	        
+	        switch(alternativa2) {
+	        case 1:
+	        	pontos = pontos + 5; 
+	        	System.out.println("VOCE ACERTOU");
+	        	System.out.println("Total de pontos: " + pontos);
+	        	break; 
+	        case 2:
+	        	System.out.println("VOCE ERROU!");
+	        	break;
+	        case 3:
+	        	System.out.println("VOCE ERROU!");
+	        	break;
+	        case 4:
+	        	System.out.println("VOCE ERROU!");
+	        	break;
+	        case 5:
+	        	System.out.println("VOCE ERROU!");
+	        	break;
+	        default:
+	        	System.out.println("digite uma opcao valida");
+	        	return;
+	        }
+	        
+	     // Pergunta 3
+	        System.out.println("3. Qual é a base do sistema octal?\r\n"
+	                + "1) 2\r\n"
+	                + "2) 4\r\n"
+	                + "3) 8\r\n"
+	                + "4) 10\r\n"
+	                + "5) 16\r\n");
+	        int alternativa3 = sc.nextInt();
+
+	        switch(alternativa3) {
+	            case 3:
+	                pontos += 5;
+	                System.out.println("VOCE ACERTOU");
+	                System.out.println("Total de pontos: " + pontos);
+	                break;
+	            case 1: case 2: case 4: case 5:
+	                System.out.println("VOCE ERROU!");
+	                break;
+	            default:
+	                System.out.println("digite uma opcao valida");
+	                return;
+	        }
+
+	        // Pergunta 4
+	        System.out.println("4. Quantos dígitos tem um número hexadecimal?\r\n"
+	                + "1) 4\r\n"
+	                + "2) 6\r\n"
+	                + "3) 8\r\n"
+	                + "4) 10\r\n"
+	                + "5) 16\r\n");
+	        int alternativa4 = sc.nextInt();
+
+	        switch(alternativa4) {
+	            case 5:
+	                pontos += 5;
+	                System.out.println("VOCE ACERTOU");
+	                System.out.println("Total de pontos: " + pontos);
+	                break;
+	            case 1: case 2: case 3: case 4:
+	                System.out.println("VOCE ERROU!");
+	                break;
+	            default:
+	                System.out.println("digite uma opcao valida");
+	                return;
+	        }
+
+	        // Pergunta 5
+	        System.out.println("5. Qual é o valor decimal do número binário 1010?\r\n"
+	                + "1) 4\r\n"
+	                + "2) 5\r\n"
+	                + "3) 8\r\n"
+	                + "4) 10\r\n"
+	                + "5) 12\r\n");
+	        int alternativa5 = sc.nextInt();
+
+	        switch(alternativa5) {
+	            case 4:
+	                pontos += 5;
+	                System.out.println("VOCE ACERTOU");
+	                System.out.println("Total de pontos: " + pontos);
+	                break;
+	            case 1: case 2: case 3: case 5:
+	                System.out.println("VOCE ERROU!");
+	                break;
+	            default:
+	                System.out.println("digite uma opcao valida");
+	                return;
+	        }
+
+	        // Pergunta 6
+	        System.out.println("6. Quantos dígitos o sistema decimal possui?\r\n"
+	                + "1) Infinitos\r\n"
+	                + "2) 8\r\n"
+	                + "3) 10\r\n"
+	                + "4) 12\r\n"
+	                + "5) 16\r\n");
+	        int alternativa6 = sc.nextInt();
+
+	        switch(alternativa6) {
+	            case 3:
+	                pontos += 5;
+	                System.out.println("VOCE ACERTOU");
+	                System.out.println("Total de pontos: " + pontos);
+	                break;
+	            case 1: case 2: case 4: case 5:
+	                System.out.println("VOCE ERROU!");
+	                break;
+	            default:
+	                System.out.println("digite uma opcao valida");
+	                return;
+	        }
+
+	        // Pergunta 7
+	        System.out.println("7. Qual é o sistema numérico que utiliza os dígitos de 0 a 9 e as letras de A a Z?\r\n"
+	                + "1) Alfanumérico\r\n"
+	                + "2) Octal\r\n"
+	                + "3) Binário\r\n"
+	                + "4) Hexadecimal\r\n"
+	                + "5) Decimal\r\n");
+	        int alternativa7 = sc.nextInt();
+
+	        switch(alternativa7) {
+	            case 4:
+	                pontos += 5;
+	                System.out.println("VOCE ACERTOU");
+	                System.out.println("Total de pontos: " + pontos);
+	                break;
+	            case 1: case 2: case 3: case 5:
+	                System.out.println("VOCE ERROU!");
+	                break;
+	            default:
+	                System.out.println("digite uma opcao valida");
+	                return;
+	        }
+
+	        // Pergunta 8
+	        System.out.println("8. Qual é o valor decimal do número hexadecimal '1B'?\r\n"
+	                + "1) 25\r\n"
+	                + "2) 26\r\n"
+	                + "3) 27\r\n"
+	                + "4) 28\r\n"
+	                + "5) 29\r\n");
+	        int alternativa8 = sc.nextInt();
+
+	        switch(alternativa8) {
+	            case 1:
+	                pontos += 5;
+	                System.out.println("VOCE ACERTOU");
+	                System.out.println("Total de pontos: " + pontos);
+	                break;
+	            case 2: case 3: case 4: case 5:
+	                System.out.println("VOCE ERROU!");
+	                break;
+	            default:
+	                System.out.println("digite uma opcao valida");
+	                return;
+	        }
+	        System.out.println("Parabens " + jogador + " Você conseguiu " + pontos + " pontos do total de 40 pontos");
 	        
 	        }
 	        
