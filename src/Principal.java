@@ -460,7 +460,7 @@ public class Principal {
                     System.out.println("Digite uma opcao valida");
                     break;
             }
-            }while(alternativa12>1||alternativa12>5);
+            }while(alternativa12<1||alternativa12>5);
             System.out.println(" ");
             
 
@@ -1160,7 +1160,7 @@ public class Principal {
 	                        System.out.println("Digite uma opcao valida");
 	                        break;
 	                }
-	                }while(alternativa12>1||alternativa12>5);
+	                }while(alternativa12<1||alternativa12>5);
 	                System.out.println(" ");
 	                
 
